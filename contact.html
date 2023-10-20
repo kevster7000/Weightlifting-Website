@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kevin Tang">
+    <title>Contact</title>
+    <link rel="icon" href="img/favicon/arm-muscle.png">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="contact.js" defer type="module"></script>
+</head>
+<body>
+    <header class="header">
+        <h2 class="title">7ANG</h2>
+        <div class="menu-burger">
+            <div class="menu-burger-line line1"></div><br>
+            <div class="menu-burger-line line2"></div>
+        </div>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="anatomy.html">Anatomy</a>
+            <a href="chest.html">Chest</a>
+            <a href="shoulders.html">Shoulders</a>
+            <a href="back.html">Back</a>
+            <a href="arms.html">Arms</a>
+            <a href="legs.html">Legs</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main class="contact-background">
+        <video src="img/bg/seamless.mp4" autoplay muted loop class="home-video1" draggable="false" preload="auto"></video>
+        <video src="img/bg/seamless1200.mp4" autoplay muted loop class="home-video2" draggable="false" preload="auto"></video>
+        <video src="img/bg/seamless1024.mp4" autoplay muted loop class="home-video3" draggable="false" preload="auto"></video>
+        <video src="img/bg/seamless768.mp4" autoplay muted loop class="home-video4" draggable="false" preload="auto"></video>
+        <video src="img/bg/seamless576.mp4" autoplay muted loop class="home-video5" draggable="false" preload="auto"></video>
+        
+        <div class="home-filter"></div>
+
+        <form action="messages.txt" method="post" class="contact-form">
+            <div class="contact-info">
+                <div>
+                    <label for="firstname">First Name:</label> <br>
+                    <input type="text" placeholder="John" name="firstname" id="firstname" autofocus autocomplete="off">
+                </div>
+                <div>
+                    <label for="lastname">Last Name:</label> <br>
+                    <input type="text" placeholder="Doe" name="lastname" id="lastname" autocomplete="off">
+                </div>
+                <div>
+                    <label for="email">Email:</label> <br>
+                    <input type="email" placeholder="example@email.com" name="email" id="email" class="contact-email" required autocomplete="off">
+                </div>
+            </div>
+            <label for="message">Message:</label> <br>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Type your message here" required autocomplete="off"></textarea>
+            <br>
+            <button type="submit" formaction="messages.txt" value="Send">Submit</button>
+            <button type="reset">Clear</button>
+        </form>
+        <div class="contact-cover">Thank you!</div>
+    </main>
+
+    <footer class="contact-footer">
+        <header class="header">
+            <h2 class="contact-title"></h2>
+        </header>
+
+        <div class="contact-filter"></div>
+    </footer>
+
+</body>
