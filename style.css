@@ -649,7 +649,7 @@ nav a:hover, nav a:focus-visible {
    flex-flow: column nowrap;
 }
 .exercises .exercise {
-    opacity: 0;
+    opacity: 1;
     display: none;
     color: var(--LIGHT-TEXT);
     grid-template-columns: clamp(60px, 15%, 120px) clamp(200px, 50%, 650px) auto;
@@ -659,7 +659,7 @@ nav a:hover, nav a:focus-visible {
     box-shadow: 0 2.5px 2.25px -2px hsla(210, 7%, 85%, 0.375);
 }
 .exercise.load {
-    animation: exercise-loading 0.22s ease-in 1 forwards;
+    animation: exercise-loading 0.25s ease-in 1 forwards;
     opacity: 0;
 }
 .exercise.display {
@@ -669,6 +669,14 @@ nav a:hover, nav a:focus-visible {
 @keyframes exercise-loading {
     from { opacity: 0; transform: scale(105%, 105%);}
     to { opacity: 1; transform: scale(1, 1);}
+}
+.exercise.exfade {
+    animation: exercise-fading 0.25s ease-out 1 forwards;
+    opacity: 0;
+}
+@keyframes exercise-fading {
+    from { opacity: 1; transform: scale(1, 1);}
+    to { opacity: 0; transform: scale(95%, 95%);}
 }
 .exercise .exercise-rank {
     font-size: clamp(1.2rem, 1.35vw, 1.5rem);

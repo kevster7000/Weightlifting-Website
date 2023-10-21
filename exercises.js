@@ -11,7 +11,26 @@ menuBurger.addEventListener("click", () => {
     }
 });
 
+let options = {
+    rootMargin: "0px",
+    threshold: 0.35,
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if(entry.isIntersecting) {
+            entry.target.classList.add("load");
+            entry.target.classList.remove("exfade");
+        }
+        else {
+            entry.target.classList.add("exfade");
+            entry.target.classList.remove("load");
+        }
+    })
+}, options);
+
 const exercises = document.getElementsByClassName("exercise");
+for(let i = 0; i < exercises.length; i++) observer.observe(exercises[i]);
 let currentExercises = [];
 
 const clavicular = ["chest2", "chest4", "chest8", "chest11", "chest14"];
@@ -153,8 +172,10 @@ clearBtn.addEventListener("click", () => {
 function filter(exercises, array) {
     currentExercises = [];
     for(let i = 0; i < exercises.length; i++) {
+        observer.unobserve(exercises[i]);
         exercises[i].classList.remove("display");
         exercises[i].classList.remove("load");
+        exercises[i].classList.remove("exfade");
         if(array.includes(exercises[i].id)) {
             currentExercises.push(exercises[i]);
         }
@@ -163,42 +184,23 @@ function filter(exercises, array) {
 
 function rankAndOrder() {
     for(let i = 0; i < currentExercises.length; i++) {
+        observer.observe(currentExercises[i]);
         currentExercises[i].querySelector(".ranking").textContent = i + 1;
         currentExercises[i].querySelector(".count").textContent = currentExercises.length;
         currentExercises[i].classList.add("display");
-        //currentExercises[i].classList.add("load");
     }
 }
 
 function clear() {
     currentExercises = [];
     for(let i = 0; i < exercises.length; i++) {
+        observer.unobserve(exercises[i]);
         exercises[i].classList.remove("display");
-        //exercises[i].classList.remove("load");
+        exercises[i].classList.remove("load");
+        exercises[i].classList.remove("exfade");
     }
     currentExercises = exercises;
     setTimeout(() => { rankAndOrder();}, 70);
 
-    console.log(exercises);
+    //console.log(exercises);
 }
-
-const exerciseElements = document.querySelectorAll(".exercise");
-
-let options = {
-    rootMargin: "0px",
-    threshold: 0.33,
-};
-
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        if(entry.isIntersecting) {
-            entry.target.classList.add("load");
-        }
-        else {
-            entry.target.classList.remove("load");
-        }
-        
-    })
-}, options);
-
-exerciseElements.forEach((el) => {observer.observe(el);})
