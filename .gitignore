@@ -3,8 +3,7 @@
 compressed.mp4
 seamless576(old).mp4
 
-img/caro/*.svg
 img/caro/*.jpg
 
-img/ex/*.svg
-img/ex/*/*.svg
+img/*/*.svg
+img/*/*/*.svg
