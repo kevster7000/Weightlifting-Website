@@ -644,9 +644,9 @@ nav a:hover, nav a:focus-visible {
 }
 .exercises {
     overflow: hidden;
-   padding: 1rem;
-   display: flex;
-   flex-flow: column nowrap;
+    padding: 1rem;
+    display: flex;
+    flex-flow: column nowrap;
 }
 .exercises .exercise {
     opacity: 1;
@@ -735,7 +735,7 @@ nav a:hover, nav a:focus-visible {
     width: clamp(100px, 55%, 200px);
     height: auto;
     mix-blend-mode: exclusion;
-    filter:invert(7%);
+    filter:invert(7%) contrast(0.9) saturate(1.25);
 }
 
 /* XL ------------------------------------------------------------------------------------------------*/
@@ -1134,7 +1134,6 @@ nav a:hover, nav a:focus-visible {
         box-shadow: 0px 0px 5px var(--ICEY);
     }
     .exercises .exercise {
-        display: grid;
         grid-template-columns: 22% auto;
     }
     .exercise .exercise-muscles {
@@ -1186,7 +1185,8 @@ nav a:hover, nav a:focus-visible {
         word-spacing: -1.25px; 
     }
 
-/*     .ana-background {
+/* TODO ********************************************* make it responsive to xsmall screen
+     .ana-background {
         display: flex;
         flex-flow: column nowrap;
         justify-content: start;
