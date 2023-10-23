@@ -735,7 +735,7 @@ nav a:hover, nav a:focus-visible {
     width: clamp(100px, 55%, 200px);
     height: auto;
     mix-blend-mode: exclusion;
-    filter:invert(7%) contrast(0.9) saturate(1.25);
+    filter:invert(7%) contrast(0.875) saturate(1.25) brightness(1.1);
 }
 
 /* XL ------------------------------------------------------------------------------------------------*/

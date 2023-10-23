@@ -45,7 +45,7 @@ let rightCount = 1;
 
 let quoteOptions = {
     rootMargin: "0px",
-    threshold: 0.9,
+    threshold: 0.975,
 };
 
 const quoteObserver = new IntersectionObserver((entries) => {
