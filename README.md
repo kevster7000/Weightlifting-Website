@@ -1,4 +1,31 @@
 # **[7ANG](https://duckduckgo.com)**   
-***A website that contains my personal experiences lifting weights*** 
+### ***A website that contains my thoughts and experiences while lifting weights.*** 
    
-This is my first project that uses the 3 basic technologies of web development: HTML, CSS, and JavaScript. Although my code is messy and the journey was a bit haphazard, I learned a lot from this and will actually retain the knowledge. I thought this was an appropiate time to make a project (and an original one too) rather than continuing with tutorial hell and forgetting everything.
+This is my first project that uses the 3 basic technologies of web development: HTML, CSS, and JavaScript. Although my code is messy and the journey was a bit haphazard, I learned a lot from this and will actually retain the knowledge. I thought this was an appropriate time to make a project (and an original one too) rather than continuing with tutorial hell and forgetting everything. Note that I did make this project while I was learning HTML, CSS, and JS, so there are a few things I would've changed if I already knew all of this.
+
+---
+#### Things I've Learned:
+- Intersection Observers are amazing and will probably be the only thing I'll be using in regards to on-scroll animations
+- I need to organize my files better
+- I need to organize my CSS better, especially the media queries; use SASS?
+- When tabbing through the page, the anchor links and buttons will have an outline by default
+- Use more CSS variables
+- When in doubt, use this rule: border: 1px solid red;
+- I learned a lot about transitions and animations/keyframes by just messing around
+
+---
+#### Things I'm Proud of:
+- The Carousel on the home page
+- The fact that everything was written by myself
+- The filter buttons for each of the exercise pages
+- The fade-in and fade-out ons-croll animations for the exercises
+- The burger menu
+- The aesthetics and atmosphere I managed to portray
+
+---
+#### Things I could've done Better/Changed:
+- Instead of writing so much HTML, I could've stored each exercise as an obj in their respective array or group in a separate file. Then I could import that as a module and iterate through the array, adding each exercise using JS rather than hardcoding with HTML. This probably would've made everything easier and more automated with JS. But alas, I learned HTML and CSS before even touching JS.
+- The Contact Form does not work - need to learn Node.js; I wanted to only use HTML, CSS, and JS on this project
+- The entire anatomy.js file could've been written so much better and honestly should've been more concise; I'm pretty sure I wrote this right after learning about the DOM and event listeners. However it works, and therefore, I shall not touch it :)
+- Pretty much everything could've been organized and written better, but at least the result matches my imagination
+---

@@ -13,7 +13,7 @@ menuBurger.addEventListener("click", () => {
 
 let options = {
     rootMargin: "0px",
-    threshold: 0.35,
+    threshold: 0.3,
 };
 
 const observer = new IntersectionObserver((entries) => {
@@ -49,10 +49,10 @@ const biceps = ["arms1", "arms4", "arms7", "arms8", "arms12", "arms14", "arms17"
 const triceps = ["arms2", "arms3", "arms5", "arms9", "arms10", "arms13", "arms18"];
 const forearm = ["arms6", "arms11", "arms15", "arms16"];
 
-const quadriceps = ["legs1", "legs2", "legs3", "legs5", "legs6", "legs16", "legs17", "legs18"];
+const quadriceps = ["legs1", "legs2", "legs3", "legs5", "legs6", "legs9", "legs16", "legs17", "legs18"];
 const hamstrings = ["legs4", "legs8", "legs10", "legs14"];
 const calves = ["legs7", "legs11", "legs12", "legs13", "legs20"];
-const glutes = ["legs4", "legs5", "legs8", "legs9", "legs15", "legs19"];
+const glutes = ["legs4", "legs6", "legs8", "legs9", "legs15", "legs19"];
 
 // Chest
 try {
