@@ -252,7 +252,7 @@ nav a:hover, nav a:focus-visible {
     border: none;
     cursor: pointer;
     transition: filter 0.25s, text-shadow 0.25s;
-    z-index: 3;
+    z-index: 2;
 }
 .fas:hover {
     text-shadow: 0px 0px 3px var(--ICEY);

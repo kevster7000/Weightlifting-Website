@@ -5,27 +5,29 @@ This is my first project that uses the 3 basic technologies of web development: 
 
 ---
 #### Things I've Learned:
-- Intersection Observers are amazing and will probably be the only thing I'll be using in regards to on-scroll animations
-- I need to organize my files better
-- I need to organize my CSS better, especially the media queries; use SASS?
-- When tabbing through the page, the anchor links and buttons will have an outline by default
-- Use more CSS variables
+- Intersection Observers are amazing for on-scroll animations
 - When in doubt, use this rule: border: 1px solid red;
+- I need to organize my files better
+- I need to use more CSS variables and organize my CSS file better, especially the media queries; use SASS?
+- When tabbing through the page, the anchor links and buttons will have an outline by default
+- Nesting flexboxes and grids is cool
+- Apparently subclasses are a thing in CSS: .class1.class2 {} - class2 only applies if the element has class1
 - I learned a lot about transitions and animations/keyframes by just messing around
+- I learned that there's a lot more to learn
 
 ---
 #### Things I'm Proud of:
 - The Carousel on the home page
 - The fact that everything was written by myself
-- The filter buttons for each of the exercise pages
+- The filter buttons for each of the exercise pages and their functionality
 - The fade-in and fade-out ons-croll animations for the exercises
 - The burger menu
 - The aesthetics and atmosphere I managed to portray
 
 ---
 #### Things I could've done Better/Changed:
-- Instead of writing so much HTML, I could've stored each exercise as an obj in their respective array or group in a separate file. Then I could import that as a module and iterate through the array, adding each exercise using JS rather than hardcoding with HTML. This probably would've made everything easier and more automated with JS. But alas, I learned HTML and CSS before even touching JS.
-- The Contact Form does not work - need to learn Node.js; I wanted to only use HTML, CSS, and JS on this project
+- Instead of writing so much HTML, I could've stored each exercise as an obj in their respective array or group in a separate file. Then I could import that as a module and iterate through the array, adding each exercise using JS rather than hardcoding with HTML. This probably would've made everything easier and more automated. But alas, I learned HTML and CSS before even touching JS.
+- The Contact Form does not work since I wanted to only use HTML, CSS, and JS on this project
 - The entire anatomy.js file could've been written so much better and honestly should've been more concise; I'm pretty sure I wrote this right after learning about the DOM and event listeners. However it works, and therefore, I shall not touch it :)
 - Pretty much everything could've been organized and written better, but at least the result matches my imagination
 ---

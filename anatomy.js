@@ -11,6 +11,15 @@ menuBurger.addEventListener("click", () => {
     }
 });
 
+window.addEventListener("click", (event) => {
+    let height = navbar.offsetHeight + navbar.offsetTop;
+
+    if(event.clientY > height && menuBurger.classList[1] == "open") {
+        menuBurger.classList.toggle("open");
+        navbar.style.animation = "fade-out 0.5s ease-in-out 1 forwards";
+    }
+});
+
 let activeButton = document.querySelector(".anaActive");
 
 const chestButton = document.getElementById("anaNavChest");
