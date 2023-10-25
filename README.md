@@ -20,7 +20,7 @@ This is my first project that uses the 3 basic technologies of web development: 
 - The Carousel on the home page
 - The fact that everything was written by myself
 - The filter buttons for each of the exercise pages and their functionality
-- The fade-in and fade-out ons-croll animations for the exercises
+- The fade-in and fade-out on-scroll animations for the exercises
 - The burger menu
 - The aesthetics and atmosphere I managed to portray
 

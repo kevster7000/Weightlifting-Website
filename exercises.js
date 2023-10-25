@@ -54,9 +54,9 @@ const upperBack = ["back1", "back3", "back6", "back10", "back11"];
 const traps = ["back8", "back12", "back13"];
 const latDorsi = ["back2", "back4", "back5", "back7", "back9", "back14"];
 
-const biceps = ["arms1", "arms4", "arms7", "arms8", "arms12", "arms14", "arms17"];
+const biceps = ["arms1", "arms4", "arms7", "arms8", "arms12", "arms17"];
 const triceps = ["arms2", "arms3", "arms5", "arms9", "arms10", "arms13", "arms18"];
-const forearm = ["arms6", "arms11", "arms15", "arms16"];
+const forearm = ["arms6", "arms11", "arms14", "arms15", "arms16"];
 
 const quadriceps = ["legs1", "legs2", "legs3", "legs5", "legs6", "legs9", "legs16", "legs17", "legs18"];
 const hamstrings = ["legs4", "legs8", "legs10", "legs14"];
