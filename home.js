@@ -74,6 +74,8 @@ const carouselObserver = new IntersectionObserver((entries) => {
             (document.querySelector(".carousel").offsetTop) - 
             (document.querySelector(".quotes").clientHeight + document.querySelector(".quotes").offsetTop);
 
+        if(diff < 0) diff = 110;
+
         quoteOptions = {
             rootMargin: `350px 0px -${diff}px 0px`,
             threshold: 0.95,
@@ -223,3 +225,20 @@ function nextSlides(it) {
     leftCount = (leftCount + it < 0) ? 7 : (leftCount + it > 7) ? 0 : leftCount + it;
     rightCount = (rightCount + it < 0) ? 7 : (rightCount + it > 7) ? 0 : rightCount + it;
 }
+
+let textShadowArr = [
+    "0px 0px 10px hsla(0, 0%, 86%, 0.6), 0px 0px 3px hsla(0, 0%, 86%, 0.75);",
+    "0px 0px 27px hsla(0, 0%, 86%, 0.725), 0px 0px 9px hsla(0, 0%, 86%, 0.875);",
+];
+
+function pulsate() {
+    let text = document.querySelector("main h2");
+    if(getComputedStyle(text).textShadow == "rgba(219, 219, 219, 0.6) 0px 0px 10px, rgba(219, 219, 219, 0.75) 0px 0px 3px") {
+        text.style = `text-shadow: ${textShadowArr[1]}`;
+    }
+    else {
+        text.style = `text-shadow: ${textShadowArr[0]}`;
+    }
+}
+
+setInterval(pulsate, 2100);
