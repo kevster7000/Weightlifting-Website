@@ -22,7 +22,7 @@ window.addEventListener("click", (event) => {
 
 let homeOptions = {
     rootMargin: "0px",
-    threshold: 0,
+    threshold: 0.125,
 }
 
 const homeObserver = new IntersectionObserver((entries) => {
@@ -34,30 +34,13 @@ const homeObserver = new IntersectionObserver((entries) => {
 const home = document.querySelectorAll(".home-background video");
 home.forEach((el) => {homeObserver.observe(el); })
 
-let carouselOptions = {
-    rootMargin: "0px",
-    threshold: 0.1,
-};
-
-const carouselObserver = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        entry.target.classList.toggle("carouselShow", entry.isIntersecting);
-    });
-}, carouselOptions);
-
-const carousel = document.querySelector(".carouselHidden");
-carouselObserver.observe(carousel);
-
-let activeCount = 0;
-let leftCount = 7;
-let rightCount = 1;
-
+let diff = 110;
 let quoteOptions = {
-    rootMargin: "0px",
-    threshold: 0.975,
+    rootMargin: `350px 0px -${diff}px 0px`,
+    threshold: 0.95,
 };
 
-const quoteObserver = new IntersectionObserver((entries) => {
+let quoteObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if(entry.isIntersecting) {
             entry.target.classList.add("quoteShow");
@@ -74,6 +57,53 @@ const quoteObserver = new IntersectionObserver((entries) => {
 
 const quoteContainer = document.querySelector(".quotes");
 quoteObserver.observe(quoteContainer);
+
+let carouselOptions = {
+    rootMargin: "0px",
+    threshold: 0.125,
+};
+
+const carouselObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        entry.target.classList.toggle("carouselShow", entry.isIntersecting);
+
+        quoteObserver.unobserve(quoteContainer);
+
+        diff = 
+            (document.querySelector(".carousel").clientHeight * 0.1225) + 
+            (document.querySelector(".carousel").offsetTop) - 
+            (document.querySelector(".quotes").clientHeight + document.querySelector(".quotes").offsetTop);
+
+        quoteOptions = {
+            rootMargin: `350px 0px -${diff}px 0px`,
+            threshold: 0.95,
+        };
+
+        quoteObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if(entry.isIntersecting) {
+                    entry.target.classList.add("quoteShow");
+                    entry.target.querySelector(".quoteActive").classList.remove("quoteFade");
+                    entry.target.querySelector(".quoteActive").classList.add("quoteAnimate");
+                }
+                else {
+                    entry.target.classList.remove("quoteShow");
+                    entry.target.querySelector(".quoteActive").classList.remove("quoteAnimate");
+                    entry.target.querySelector(".quoteActive").classList.add("quoteFade");
+                }
+            });
+        }, quoteOptions);
+        
+        quoteObserver.observe(quoteContainer);
+    });
+}, carouselOptions);
+
+const carousel = document.querySelector(".carouselHidden");
+carouselObserver.observe(carousel);
+
+let activeCount = 0;
+let leftCount = 7;
+let rightCount = 1;
 
 const quotes = document.getElementsByClassName("quote");
 

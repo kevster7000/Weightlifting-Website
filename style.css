@@ -130,18 +130,19 @@ nav a:hover, nav a:focus-visible {
     font-size: min(15vw, 7.5rem);
     color: var(--LIGHT-TEXT);
     position: absolute;
-    top: 30%;
+    top: 28%;
     left: 50%;
     transform: translate(-50%);
+    text-shadow: 0px 0px 7px hsla(0, 0%, 86%, 0.5), 0px 0px 2px hsla(0, 0%, 86%, 0.75);
 }
 .home-background p {
     text-align: center;
     padding: min(20%, 9rem) 15% 0 15%;
     font-size: min(4vw, 1.375rem);
     line-height: min(6vw, 2rem);
-    color: var(--LIGHT-TEXT);
+    color: hsla(0, 0%, 86%, 0.95);
     position: absolute;
-    top: 30%;
+    top: 28%;
 }
 .home-background a {
     color: var(--LIGHT-TEXT);
@@ -1081,7 +1082,7 @@ nav a:hover, nav a:focus-visible {
         gap: clamp(2px, 7.5vw, 50px); */
     }
     .ana-background .anaNav .anaNavOption button {
-        font-size: clamp(1.15rem, 3.25vw, 1.75rem);
+        font-size: clamp(1.15rem, 3.75vw, 1.75rem);
     }
     .ana-background .anaDisplay {
         overflow: auto;
@@ -1188,31 +1189,42 @@ nav a:hover, nav a:focus-visible {
         letter-spacing: .075rem;
         word-spacing: -1.25px; 
     }
-
-/* TODO ********************************************* make it responsive to xsmall screen
-     .ana-background {
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: start;
+    .ana-background section {
+        margin: clamp(0.25rem, 1.75vw, 0.5rem);
     }
     .ana-background .anaNav {
-        padding: 3.25rem 1.25rem 0.25rem 1.25rem;
+        padding: clamp(1.75rem, 12vw, 3.25rem) clamp(0.25rem, 2vw, 1.25rem) 0.25rem clamp(0.25rem, 2vw, 1.25rem);
         transform: translate(0, -45%);
         flex-flow: row nowrap;
         justify-content: space-around;
     }
     .ana-background .anaNav .anaNavOption button {
-        font-size: clamp(1.15rem, 3.25vw, 1.75rem);
+        font-size: clamp(0.75rem, 6vw, 1.25rem);
     }
     .ana-background .anaDisplay {
-        overflow: auto;
-        width: calc(100% - 4rem);
+        overflow: visible;
+        width: auto;
         margin: 0;
-        height: 70vh;
-        padding: 1rem 2rem;
-        margin-inline: 2rem;
-        font-size: 18px;
-    } */
+        margin-bottom: clamp(2.75rem, 10vw, 4rem);
+        height: auto;
+        padding: clamp(0.25rem, 3vw, 1rem) clamp(1rem, 7vw, 3.75rem);
+        font-size: clamp(10px, 4.35vw, 16px);
+    }
+    .anaActive::before {
+        height: 3px;
+    }
+    .anaDisplay div figcaption {
+        font-size: clamp(8px, 3.25vw, 12px);
+    }
+    .anaDisplay h2 {
+        font-size: clamp(16px, 7.5vw, 27px);
+    }
+    .anaDisplay p {
+        word-spacing: -1px;
+    }
+    .carousel .slide h2 {
+        font-size: clamp(14px, 5vw, 1.75rem);
+    }
 }
 
 /* XXS -------------------------------------------------------------------------------------------------------*/
@@ -1240,6 +1252,15 @@ nav a:hover, nav a:focus-visible {
         line-height: .975;
         letter-spacing: -0.35px;
         word-spacing: -0.25px;
+    }
+    .anaDisplay h2 {
+        text-align: center;
+    }
+    .fa-angle-left {
+        left: 7%;
+    }
+    .fa-angle-right {
+        right: 7%;
     }
 }
 
