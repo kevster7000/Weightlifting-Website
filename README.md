@@ -31,3 +31,6 @@ This is my first project that uses the 3 basic technologies of web development: 
 - The entire anatomy.js file could've been written so much better and honestly should've been more concise; I'm pretty sure I wrote this right after learning about the DOM and event listeners. However, it works and therefore, I shall not touch it :)
 - Pretty much everything could've been organized and written better, but at least the result matches my imagination
 ---
+[![My Skills](https://skillicons.dev/icons?i=html)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=css)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=js)](https://skillicons.dev)
