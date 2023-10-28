@@ -697,7 +697,7 @@ nav a:hover, nav a:focus-visible {
 }
 .exercise .exercise-description {
     text-align: justify;
-    font-size: clamp(1rem, 1.075vw, 1.1rem);
+    font-size: clamp(1rem, 1.08vw, 1.125rem);
 }
 .exercise .exercise-muscles {
     grid-row: 2 / 3;
