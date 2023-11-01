@@ -8,7 +8,7 @@ This is my first project that uses the 3 basic technologies of web development: 
 - Intersection Observers are amazing for on-scroll animations
 - When in doubt, use this rule: border: 1px solid red;
 - I need to organize my files better
-- I need to use more CSS variables and organize my CSS file better, especially the media queries; use SASS?
+- I need to use more CSS variables and organize my CSS file better, especially the media queries; use Sass?
 - When tabbing through the page, the anchor links and buttons will have an outline by default
 - Nesting flexboxes and grids is cool
 - Apparently subclasses are a thing in CSS: .class1.class2 {} - class2 only applies if the element has class1
@@ -29,8 +29,9 @@ This is my first project that uses the 3 basic technologies of web development: 
 - Instead of writing so much HTML, I could've stored each exercise as an obj in their respective array or group in a separate file. Then I could import that as a module and iterate through the array, adding each exercise using JS rather than hardcoding with HTML. This probably would've made everything easier and more automated. But alas, I learned HTML and CSS before even touching JS.
 - The Contact Form does not work since I wanted to only use HTML, CSS, and JS on this project
 - The entire anatomy.js file could've been written so much better and honestly should've been more concise; I'm pretty sure I wrote this right after learning about the DOM and event listeners. However, it works and therefore, I shall not touch it :)
-- Should've made the burger menu with a button so that it could be accessible through the keyboard. Though, I wasn't really think much about accessibility during the creation of this project; I've only learned about accessibility recently.
+- Should've made the burger menu with a button so that it could be accessible through the keyboard. Though, accessibility wasn't a priority of this project since I didn't know much about it at during this time.
 - Pretty much everything could've been organized and written better, but at least the result matches my imagination
+
 ---
 [![My Skills](https://skillicons.dev/icons?i=html)](https://skillicons.dev)
 [![My Skills](https://skillicons.dev/icons?i=css)](https://skillicons.dev)

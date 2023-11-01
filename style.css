@@ -9,7 +9,7 @@ body {
     background-color: var(--BLACKICE);
 }
 img, video { display: block;}
-.nowrap {white-space: nowrap;}
+.nowrap { white-space: nowrap; }
 
 /* VARIABLES --------------------------------------------------------------------------------------------------*/
 :root {
@@ -27,9 +27,8 @@ img, video { display: block;}
 .header {
     background-image: url('img/bg/marquina-midnight-quartz.jpg');
     background-size: 100%;
-
     position: sticky;
-    top: -54.3px;;
+    top: -54.3px;
     z-index: 3;
 }
 .title {
