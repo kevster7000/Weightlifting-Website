@@ -228,7 +228,7 @@ function nextSlides(it) {
 
 let textShadowArr = [
     "0px 0px 10px hsla(0, 0%, 86%, 0.6), 0px 0px 3px hsla(0, 0%, 86%, 0.75);",
-    "0px 0px 27px hsla(0, 0%, 86%, 0.725), 0px 0px 9px hsla(0, 0%, 86%, 0.875);",
+    "0px 0px 24px hsla(0, 0%, 86%, 0.725), 0px 0px 9px hsla(0, 0%, 86%, 0.875);",
 ];
 
 function pulsate() {
@@ -241,4 +241,4 @@ function pulsate() {
     }
 }
 
-setInterval(pulsate, 2100);
+setInterval(pulsate, 5050);
