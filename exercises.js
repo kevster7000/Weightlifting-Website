@@ -21,7 +21,6 @@ window.addEventListener("click", (event) => {
 });
 
 let options = {
-    rootMargin: "0px",
     threshold: 0.3,
 };
 

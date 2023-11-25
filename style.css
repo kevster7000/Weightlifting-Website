@@ -275,7 +275,7 @@ nav a:hover, nav a:focus-visible {
     overflow: hidden;
     margin-top: clamp(8rem, 19vw, 12rem);
     padding-top: 1rem;
-    padding-bottom: 5rem;
+    padding-bottom: 4.5rem;
     text-align: center;
     display: flex;
     flex-flow: row nowrap;
