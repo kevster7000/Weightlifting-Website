@@ -22,6 +22,8 @@ window.addEventListener("click", (event) => {
 
 let activeButton = document.querySelector(".anaActive");
 
+const anaDisplay = document.querySelector(".anaDisplay");
+
 const chestButton = document.getElementById("anaNavChest");
 const chestDisplay = document.querySelector(".anaChest");
 
@@ -47,6 +49,8 @@ chestButton.addEventListener("click", (event) => {
     backDisplay.style.display = "none";
     armsDisplay.style.display = "none";
     legsDisplay.style.display = "none";
+
+    anaDisplay.scrollTop = 0;
 });
 
 shouldersButton.addEventListener("click", (event) => {
@@ -59,6 +63,8 @@ shouldersButton.addEventListener("click", (event) => {
     backDisplay.style.display = "none";
     armsDisplay.style.display = "none";
     legsDisplay.style.display = "none";
+
+    anaDisplay.scrollTop = 0;
 });
 
 backButton.addEventListener("click", (event) => {
@@ -71,6 +77,8 @@ backButton.addEventListener("click", (event) => {
     backDisplay.style.display = "block";
     armsDisplay.style.display = "none";
     legsDisplay.style.display = "none";
+
+    anaDisplay.scrollTop = 0;
 });
 
 armsButton.addEventListener("click", (event) => {
@@ -83,6 +91,8 @@ armsButton.addEventListener("click", (event) => {
     backDisplay.style.display = "none";
     armsDisplay.style.display = "block";
     legsDisplay.style.display = "none";
+
+    anaDisplay.scrollTop = 0;
 });
 
 legsButton.addEventListener("click", (event) => {
@@ -95,4 +105,6 @@ legsButton.addEventListener("click", (event) => {
     backDisplay.style.display = "none";
     armsDisplay.style.display = "none";
     legsDisplay.style.display = "block";
+
+    anaDisplay.scrollTop = 0;
 });
