@@ -1,5 +1,5 @@
 # **[7ANG](https://duckduckgo.com)**   
-### ***A website that contains my thoughts and experiences on various exercises.*** 
+### ***A website that serves as a collection of my experiences lifting weights in the gym.*** 
    
 This is my first project that uses the 3 basic technologies of web development: HTML, CSS, and JavaScript. Although my code is messy and the journey was a bit haphazard, I learned a lot from this and will actually retain the knowledge. I thought this was an appropriate time to make a project (and an original one too) rather than continuing with tutorial hell and forgetting everything. Note that I did make this project while I was learning HTML, CSS, and JS, so there are a few things I would've changed if I already knew all of this.
 
