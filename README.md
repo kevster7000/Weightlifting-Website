@@ -8,7 +8,7 @@ This is my first project that uses the 3 basic technologies of web development: 
 - Intersection Observers are amazing for on-scroll animations
 - When in doubt, use this rule: border: 1px solid red;
 - I need to organize my file structure better
-- I need to use more CSS variables and organize my CSS file better, especially the media queries; use Sass?
+- I need to use more CSS variables and organize my CSS files better, especially the media queries; use Sass?
 - When tabbing through the page, the anchor links and buttons will have an outline by default
 - Apparently subclasses are a thing in CSS: .class1.class2 {} - class2 only applies if the element has class1
 - I learned a lot about transitions and animations/keyframes by just messing around
@@ -21,7 +21,7 @@ This is my first project that uses the 3 basic technologies of web development: 
 - The filter buttons for each of the exercise pages and their functionality
 - The fade-in and fade-out on-scroll animations for the exercises
 - The burger menu functionality and dropdown
-- How responsive the website is though media queries
+- How responsive the website is through media queries
 - The aesthetics and atmosphere I managed to portray
 - My exercise descriptions :)
 
@@ -30,7 +30,7 @@ This is my first project that uses the 3 basic technologies of web development: 
 - Instead of writing so much HTML, I could've stored each exercise as an obj in their respective array in a separate file. Then I could import that as a module and iterate through the array, adding each exercise using JS rather than hardcoding with HTML. This probably would've made everything easier and more automated. But alas, I learned HTML and CSS before even touching JS.
 - The Contact Form does not work since I wanted to only use HTML, CSS, and JS on this project
 - The entire anatomy.js file could've been written so much better and honestly should've been more concise; I'm pretty sure I wrote this right after learning about the DOM and event listeners. However, it works and therefore, I shall not touch it :)
-- Should've made the burger menu with a button so that it could be accessible through the keyboard. Though, accessibility wasn't a priority of this project since I didn't know much about it at that time.
+- Should've made the burger menu with a button so that it could be accessible through the keyboard. Though, accessibility wasn't much of a priority in this project since I didn't know much about it at that time.
 - Pretty much everything could've been organized and written better, but at least the result matches my imagination
 - Now that I'm looking back, my JavaScript files are utterly horrid, and I need more practice with JS.
 
