@@ -1174,7 +1174,7 @@ nav a:hover, nav a:focus-visible {
         line-height: 1;
     }
     .exercise .exercise-description {
-        font-size: clamp(0.65rem, 4.75vw, 1rem);
+        font-size: clamp(0.55rem, 4.5vw, 0.875rem);
     }
     .exercise-muscles p {
         font-size: clamp(0.65rem, 5vw, 1rem);
@@ -1199,7 +1199,7 @@ nav a:hover, nav a:focus-visible {
         justify-content: space-around;
     }
     .ana-background .anaNav .anaNavOption button {
-        font-size: clamp(0.75rem, 6vw, 1.25rem);
+        font-size: clamp(0.65rem, 5.5vw, 1.15rem);
     }
     .ana-background .anaDisplay {
         overflow: visible;
@@ -1261,6 +1261,10 @@ nav a:hover, nav a:focus-visible {
     }
     .fa-angle-right {
         right: 7%;
+    }
+    .exercise .exercise-description {
+        font-size: clamp(0.45rem, 4.5vw, 0.75rem);
+        text-align: left;
     }
 }
 
