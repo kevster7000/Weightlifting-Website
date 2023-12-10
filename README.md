@@ -28,8 +28,6 @@ This is my first project that uses the 3 basic technologies of web development: 
 ---
 #### Things I could've done Better/Changed:
 - Instead of writing so much HTML, I could've stored each exercise as an obj in their respective array in a separate file. Then I could import that as a module and iterate through the array, adding each exercise using JS rather than hardcoding with HTML. This probably would've made everything easier and more automated. But alas, I learned HTML and CSS before even touching JS.
-- The Contact Form does not work since I wanted to only use HTML, CSS, and JS on this project
-- The entire anatomy.js file could've been written so much better and honestly should've been more concise; I'm pretty sure I wrote this right after learning about the DOM and event listeners. However, it works and therefore, I shall not touch it :)
 - Should've made the burger menu with a button so that it could be accessible through the keyboard. Though, accessibility wasn't much of a priority in this project since I didn't know much about it at that time.
 - Pretty much everything could've been organized and written better, but at least the result matches my imagination
 - Now that I'm looking back, my JavaScript files are utterly horrid, and I need more practice with JS.
