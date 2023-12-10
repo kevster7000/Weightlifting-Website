@@ -528,6 +528,7 @@ nav a:hover, nav a:focus-visible {
     display: inline-block;
 }
 .contact-info {
+    width: 100%;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -593,15 +594,6 @@ nav a:hover, nav a:focus-visible {
 .contact-footer h2::before {
     content: ".";
     opacity: 0;
-}
-.contact-cover {
-    display: none;
-    font-size: clamp(3rem, 10vw, 6rem);
-    color: var(--LIGHT-TEXT);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -100%);
 }
 
 /* EXERCISES -------------------------------------------------------------------------------------------------*/
@@ -1223,7 +1215,7 @@ nav a:hover, nav a:focus-visible {
         word-spacing: -1px;
     }
     .carousel .slide h2 {
-        font-size: clamp(14px, 5vw, 1.75rem);
+        font-size: clamp(17px, 3.45vw, 20px);
     }
 }
 

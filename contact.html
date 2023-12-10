@@ -37,11 +37,11 @@
         
         <div class="home-filter"></div>
 
-        <form action="messages.txt" method="post" class="contact-form">
+        <form action="https://formspree.io/f/mqkvrglp" method="post" class="contact-form">
             <div class="contact-info">
                 <div>
                     <label for="firstname">First Name:</label> <br>
-                    <input type="text" placeholder="John" name="firstname" id="firstname" autofocus autocomplete="off">
+                    <input type="text" placeholder="John" name="firstname" id="firstname" autofocus autocomplete="off" required>
                 </div>
                 <div>
                     <label for="lastname">Last Name:</label> <br>
@@ -55,10 +55,9 @@
             <label for="message">Message:</label> <br>
             <textarea name="message" id="message" cols="30" rows="10" placeholder="Type your message here" required autocomplete="off"></textarea>
             <br>
-            <button type="submit" formaction="messages.txt" value="Send">Submit</button>
+            <button type="submit">Submit</button>
             <button type="reset">Clear</button>
         </form>
-        <div class="contact-cover">Thank you!</div>
     </main>
 
     <footer class="contact-footer">
