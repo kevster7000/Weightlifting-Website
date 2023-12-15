@@ -1167,6 +1167,7 @@ nav a:hover, nav a:focus-visible {
     }
     .exercise .exercise-description {
         font-size: clamp(0.55rem, 4.5vw, 0.875rem);
+        text-align: left;
     }
     .exercise-muscles p {
         font-size: clamp(0.65rem, 5vw, 1rem);
@@ -1211,11 +1212,14 @@ nav a:hover, nav a:focus-visible {
     .anaDisplay h2 {
         font-size: clamp(16px, 7.5vw, 27px);
     }
-    .anaDisplay p {
+    .anaDisplay div p {
         word-spacing: -1px;
+        text-align: left;
     }
     .carousel .slide h2 {
-        font-size: clamp(17px, 3.45vw, 20px);
+        font-size: clamp(17px, 3.35vw, 19px);
+        letter-spacing: -0.1px;
+        word-spacing: -0.25px; 
     }
 }
 
@@ -1256,7 +1260,6 @@ nav a:hover, nav a:focus-visible {
     }
     .exercise .exercise-description {
         font-size: clamp(0.45rem, 4.5vw, 0.75rem);
-        text-align: left;
     }
 }
 
