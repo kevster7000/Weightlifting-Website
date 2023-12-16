@@ -1213,11 +1213,13 @@ nav a:hover, nav a:focus-visible {
         font-size: clamp(16px, 7.5vw, 27px);
     }
     .anaDisplay div p {
-        word-spacing: -1px;
+        word-spacing: 1px;
+        letter-spacing: -0.125px;
         text-align: left;
+        line-height: clamp(0.75rem, 6.5vw, 1.25rem);
     }
     .carousel .slide h2 {
-        font-size: clamp(17px, 3.35vw, 19px);
+        font-size: clamp(16px, 3.25vw, 18px);
         letter-spacing: -0.1px;
         word-spacing: -0.25px; 
     }
