@@ -1,6 +1,6 @@
-# **[7ANG](https://kevster7000.github.io/Weightlifting-Website/)**   
+# **[7ANG](https://kevster7000.github.io/Weightlifting-Website/)**  
 
-### ***A website that serves as a collection of my experiences in the gym.*** 
+***A website that serves as a collection of my experiences in the gym.***
 
 <img src="./img/Screenshot%202024-01-01%20234113.png" />
   
@@ -44,4 +44,5 @@ This is my first project that uses the 3 basic technologies of web development: 
 ---
 [![My Skills](https://skillicons.dev/icons?i=html)](https://skillicons.dev)
 [![My Skills](https://skillicons.dev/icons?i=css)](https://skillicons.dev)
-[![My Skills](https://skillicons.dev/icons?i=js)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=js)](https://skillicons.dev)<br>
+Hosted on [GitHub Pages](https://pages.github.com/)
